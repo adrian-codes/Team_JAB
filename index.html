@@ -9,11 +9,14 @@
         <div class="main_container">
             <header id="main_header">
                 <h1>How would you like to be entertained today?</h1>
+                <select id='movie_selector'>
+                    <option value='Drama'>Drama</option>
+                    <option value='Comedy'>Comedy</option>
+                    <option value='Action Adventure'>Action Adventure</option>
+                    <option value='Thriller'>Thriller</option>
+                </select>
+                <div class="button" id="movie_button">Feelin' lucky? Punk?</div>
             </header>
-                <div id="movies_selector">
-                    <h3>Movies</h3>
-                    <div class="button" id="movie_button">Feelin' lucky? Punk?</div>
-                </div>
                 <div class="content_container" id="movie_content">
 
                     <div id="movie_top">
@@ -34,6 +37,7 @@
                         </div>
                 </div>
         </div>
+    <script src='movies.json'></script>
     <script src="main.js"></script>
     </body>    
 </html>
