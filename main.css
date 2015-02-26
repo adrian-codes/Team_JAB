@@ -1,0 +1,24 @@
+
+#movies_selector {
+    background-color: gray;
+}
+
+#main_header {
+    background-color: blue;
+}
+
+.main_container {
+    background-color: green;
+}
+
+#movie_content img {
+    width: 15%;
+}
+
+#movie_content p {
+    display: inline-block;
+}
+
+.trailer {
+    display: inline-block;
+}
