@@ -1,24 +1,80 @@
 
 #movies_selector {
-    background-color: gray;
+   border: 3px solid green;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#movies_selector div {
+    margin-bottom: 20px;
 }
 
 #main_header {
-    background-color: blue;
+    border: 3px solid black;
 }
 
 .main_container {
-    background-color: green;
+    border: 3px solid blue;
 }
 
 #movie_content img {
     width: 15%;
 }
 
-#movie_content p {
-    display: inline-block;
+.trailer {
+    width: 60%;
+    margin-left: 190px;
+    margin-top: 20px;
 }
 
-.trailer {
-    display: inline-block;
+
+header {
+    text-align: center;
+    font-size: 25px;
 }
+
+.content_container {
+    border: 3px solid red;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    margin-left: 118px;;
+}
+
+.button {
+    border: 1px solid black;
+    width: 35%;
+    padding: 20px;
+    position: relative;
+    left: 290px;
+    border-radius: 10px;
+}
+
+.movie_top_left {
+    width: 250px;
+    height: 300px;
+    border: 1px solid black;
+    display: inline-block;
+    background-size: 250px 300px;
+    background-repeat: no-repeat;
+    margin-left: 170px;
+}
+    
+.movie_top_right {
+    display: inline-block;
+    width: 400px;
+    margin-left: 50px;
+    vertical-align: top;
+}
+
+
+#movie_top {
+    width: 900px;
+    margin: auto;
+    margin-top: 20px;
+    
+}
+
+    
