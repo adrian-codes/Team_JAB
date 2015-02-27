@@ -49,21 +49,25 @@
 
         } // end loop
         
-        var sid = 0;
 
         for (var i = 0; i < filteredSelection.length; i++) {
 
+        (function() {
+
+            var sid = i;
+
             $.ajax({
                 url: 'http://gdata.youtube.com/feeds/api/videos?q=' + filteredSelection[i]['im:name'].label + '+' + filteredSelection[i]['im:releaseDate'].label.substring(0, 4) + '+' + 'trailer' + '&format=5&max-results=1&v=2&alt=jsonc',
-                async: false,
-                success: function load(data){
+         
+                success: function (data){
                     var url = data.data.items[0].player['default'];
                     var url = url.replace("watch?v=", "v/");
                     var player = '<iframe width="560" height="315" src=' + url + ' frameborder="0" allowfullscreen></iframe>';   
                     
-                    $('#m-' + sid++).append(player);
+                    $('#m-' + sid).append(player);
                 }, // success
             });
+        })();
         }
     })
 
