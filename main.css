@@ -1,22 +1,35 @@
 
 #movies_selector {
-   border: 3px solid green;
     width: 80%;
     margin-left: 10%;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
+    padding: 8px;
+    background: -webkit-linear-gradient(top, #101011, #5A5B61);
+    
 }
 
 #movies_selector div {
     margin-bottom: 20px;
 }
 
-#main_header {
-    border: 3px solid black;
+
+
+select {
+    height: 30px;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .main_container {
     border: 3px solid blue;
+    background-image: url(images/movie-collage-2010.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
 }
 
 #movie_content img {
@@ -32,40 +45,56 @@
 
 header {
     text-align: center;
-    font-size: 25px;
+    font-size: 22px;
+    color: white;
+    width: 90%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 15px;;
+    background: -webkit-linear-gradient(top, #161617, #494A50);
+    box-shadow:  1px 10px 15px #707884;
+    font-family: Arial;
 }
 
 .content_container {
-    border: 3px solid red;
+    border: 3px solid;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 80%;
-    margin-left: 118px;;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    background: #D2D2D9;
 }
 
 .button {
-    border: 1px solid black;
+    border: 1px solid #98999F;
     width: 35%;
     padding: 20px;
     position: relative;
     left: 290px;
     border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    background: -webkit-linear-gradient(top, #282C31, #737A83);
 }
 
 .movie_top_left {
-    width: 250px;
-    height: 300px;
+    width: 200px;
+    height: 250px;
     border: 1px solid black;
     display: inline-block;
-    background-size: 250px 300px;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    margin-left: 170px;
+    
+    
 }
     
 .movie_top_right {
     display: inline-block;
-    width: 400px;
-    margin-left: 50px;
+    width: 30%;
+    margin-left: 10px;
     vertical-align: top;
 }
 
