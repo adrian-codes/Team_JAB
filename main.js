@@ -35,13 +35,11 @@
 
         var filteredSelection = filterGenre(movieList, genreSelection);
 
-        var id = 0;
-
         $('#movie_content').html('');
 
         for (var i = 0; i < filteredSelection.length; i++) {
 
-            var html = '<div id=m-' + id + '>' + 
+            var html = '<div id=m-' + i + '>' + 
                         '<div class=movie_top>' +
                             '<div class=movie_top_left>' +
                                  '<img src=' + filteredSelection[i]['im:image'][2].label + '>' + 
@@ -78,10 +76,12 @@
                         var player = '<iframe width="560" height="315" src=' + url + ' frameborder="0" allowfullscreen></iframe>';   
                     
                         $('#m-' + sid).find('.trailer').append(player);
+
                     }, // success
                 });
             })(); // closure
-        }
+        } // loop
+
     })
 
 
